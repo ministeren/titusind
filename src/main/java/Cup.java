@@ -10,7 +10,7 @@ import java.util.concurrent.ThreadLocalRandom;
  */
 
 @Getter
-@Setter
+//@Setter
 public class Cup {
 
     private Map<Integer,Die> dice;
@@ -26,7 +26,6 @@ public class Cup {
 //        diceLeft = new LinkedList<>();
 
         for (int i = 1; i < 7; i++) {
-
             dice.put(i,Die.builder().value(0).selected(false).build());
 //            diceLeft.add(i);
 
