@@ -1,5 +1,4 @@
-import java.util.HashMap;
-import java.util.Map;
+package game;
 
 /**
  * Created by ministeren on 10-May-17.
@@ -31,7 +30,7 @@ public class Controller {
 //
 //            System.out.println();
 //            cup.roll();
-//            dieDist = rules.makeRollArray(cup.getDice());
+//            dieDist = game.rules.makeRollArray(cup.getDice());
 //
 //            for (int i = 1; i < 7; i++) {
 //                System.out.print(cup.getDice().get(i).getValue()+" ");

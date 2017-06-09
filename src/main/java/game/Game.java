@@ -1,7 +1,7 @@
+package game;
+
 /**
  * Created by ministeren on 10-May-17.
  */
-public class Turn {
-
-
+public class Game {
 }

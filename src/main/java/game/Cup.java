@@ -1,6 +1,6 @@
-import lombok.Builder;
+package game;
+
 import lombok.Getter;
-import lombok.Setter;
 
 import java.util.*;
 import java.util.concurrent.ThreadLocalRandom;

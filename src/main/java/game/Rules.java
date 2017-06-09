@@ -1,3 +1,5 @@
+package game;
+
 import java.util.Map;
 
 /**
@@ -122,7 +124,7 @@ public class Rules {
             score = 1500;
             System.out.println("threePairs");
         }
-        if(threePlusCount > 0){
+        if(threePlusCount  == 1){
             threePlus = true;
             for (int i = 1; i < 7; i++) {
                 int count = dieDist[i];
@@ -137,6 +139,17 @@ public class Rules {
                 }
             }
             System.out.println("threePlus");
+        }
+        if(threePlusCount  == 2){
+            threePlus = true;
+            forceRoll = true;
+            for (int i = 1; i < 7; i++) {
+                if(i == 1){
+                    score += i * 1000;
+                } else {
+                    score += i * 100;
+                }
+            }
         }
         if(allSameCount > 0){
             allSame = true;
@@ -157,7 +170,5 @@ public class Rules {
         } else {
             return false;
         }
-
     }
-
 }
