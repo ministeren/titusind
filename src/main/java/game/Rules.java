@@ -23,7 +23,7 @@ public class Rules {
     boolean forceRoll;
 
 
-    private int[] makeRollArray(Map<Integer,Die> dice){
+    public int[] makeRollArray(Map<Integer,Die> dice){
 
         int[] dieDist = new int[7];
 

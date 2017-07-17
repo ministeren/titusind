@@ -9,6 +9,8 @@ import java.util.Map;
  */
 public interface IRule {
 
-    int calculate(int[] diceDist);
+    int calculateScore(int[] diceDist);
+
+    boolean outcomeRolled(int[] diceDist);
 
 }
